@@ -214,7 +214,7 @@ uint16_t Msp430_GetSupplyVoltage(void)
 	//ADC10AE0 |= BIT1;
 
 
-	ADC10CTL0 = SREF_1 + REFON + REF2_5V + ADC10ON + ADC10SHT_3 + ADC10IE;  // use internal ref, turn on 2.5V ref, set samp time = 64 cycles
+	ADC10CTL0 = SREF_1 + REFON + REF2_5V + ADC10ON + ADC10SHT_2 + ADC10IE;  // use internal ref, turn on 2.5V ref, set samp time = 64 cycles
 	ADC10CTL1 = INCH_11;
 
 	ADCMeasProgress = true;
